@@ -22,7 +22,7 @@ namespace Demo
             table.SaveCSV("check.csv");
 
             // double[,] pivot = table.AsEnumerable().Pivot(r => r["Date"], r => r["Column"], r => (double) r["value"]);
-
+            //
             LinqLinearRegression reg = new LinqLinearRegression(table.AsEnumerable(), "YValue", "XValue", "Date");
             //reg.LastResult.Beta = 1;
         }
